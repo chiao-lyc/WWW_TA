@@ -5,15 +5,9 @@ Please use Reset CSS library to reduce browser inconsistency in things first.
 | Reset CSS library | https://meyerweb.com/eric/tools/css/reset/  |
 | ----------------- | ------------------------------------------- |
 | Font-size         | Slogan(ex:ZooTopia、大熊貓館):40px<br>Others:20px|
-| Color             | #80624F                                     |
-|   ^               | #c1b5a4                                     |
-|   ^               | #000000                                     |
-|   ^               | #ffffff                                     |
-|   ^               | #363945                                     |
+| Color             | Brown:#80624F<br>Milk tea:#c1b5a4<br>Black:#000000<br>White:#ffffff<br>Dark blue:#363945 |
 | Animation         | typing (one word at a time)                 |
-| List-style-type   | Square                                      |
-| ^                 | Decimal                                     |
-| ^                 | Circle                                      |
+| List-style-type   | Square<br>Decimal<br>Circle                 |
 
 ## Web contents
 
