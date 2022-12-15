@@ -4,8 +4,7 @@ Please use Reset CSS library to reduce browser inconsistency in things first.
 
 | Reset CSS library | https://meyerweb.com/eric/tools/css/reset/  |
 | ----------------- | ------------------------------------------- |
-| Font-size         | Slogan(ex:ZooTopia、大熊貓館):40px            |
-|    ^              | Others:20px                                 |
+| Font-size         | Slogan(ex:ZooTopia、大熊貓館):40px<br>Others:20px|
 | Color             | #80624F                                     |
 |   ^               | #c1b5a4                                     |
 |   ^               | #000000                                     |
