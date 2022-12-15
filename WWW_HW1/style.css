@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body, html{
+  margin:0px;
+  padding: 0 0;
+}
+
+/*
+Main CSS
+*/ 
+.header{
+  display: flex;
+  height: 400px;
+  background-image: url('Zootopia.png');
+}
+/************* HEADER *************/
+
+h1{ /*動物園*/
+  font-size: 50px;
+  font-weight: bolder;
+  margin-top:0px;
+  color: #ffffff;
+  margin-left: 30px;
+  margin-right: 80px;
+}
+/*NAV*/
+ul.ul-head{ 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.ul-head li.ul-first{
+  display: inline-block; /*並排-區塊*/
+  margin-right: 50px;
+  margin-top: 10px;
+  padding-inline-start: 0;
+}
+ul.ul-head > li.ul-first:hover{
+  display: inline-block; /*並排-區塊*/
+  background-color: #c1b5a4; 
+}
+ul.ul-head li a{
+  display: block; /*文字以block顯示(為了點擊能夠點到整區)*/
+  padding:10 30; /*block padding*/
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+} 
+ul.ul-head li.ul-first:hover > a{
+  color: #80624F;
+  font-weight: bold;
+}
+
+
+ul.ul-head li ul{ /*第二層隱藏*/
+  display: none;
+  position: absolute;
+  list-style: none;
+  min-width: 180px;
+  padding: 0;
+} 
+ul.ul-head li:hover ul{/*按下第一層選單時第二層狀態*/
+  display: block;
+  border: #ffffff 1px solid;
+  border-bottom: #ffffff 1px solid;;
+}
+
+ul.ul-head li:hover ul a:hover{ /*按下第二層選單時hover*/
+  display: block;
+  color: #80624F;
+  font-weight: bold;
+  background-color: #c1b5a4;
+  border: #ffffff 1px solid;
+  border-bottom: #ffffff 1px solid;;
+}  
+
+/************* MAIN *************/
+main{
+  height: auto;
+  background-image: url('texture1.png');
+  font-size: 20px;
+}
+@keyframes typing { /*表示div的寬度從0開始*/
+  from { width: 0px }
+}
+
+.css-header{
+  color: #80624F;
+  font-weight: bolder;
+  padding-top: 50px;
+  font-size: 50px;
+  padding-left: 550px;
+  /*animation*/
+  overflow: hidden; /*item只在固定div內渲染多出隱藏*/
+  width: 10em; /*設定div變化*/
+  white-space: nowrap;
+  animation: typing 8s steps(10)
+}
+.main-header{
+  color: #80624F;
+  font-weight: bolder;
+  font-size: 50px;
+  padding-top: 30;
+  text-align: center;
+}
+.main-content{
+  display: flex;/* 彈性物件 */ 
+  justify-content: center;/* 水平置中 */
+  align-items: center; /* 垂直置中 */ 
+  text-align: center;
+}
+.info-content{
+  display: flex;/* 彈性物件 */ 
+  justify-content: center;/* 水平置中 */
+  align-items: center; /* 垂直置中 */ 
+  padding-left: 300px;
+  padding-right: 500px;
+  line-height: 40px;
+}
+
+.zoo_pic{
+  padding: 50px;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  /*符合圖片本身形狀的陰影*/
+  filter: drop-shadow(0 0 2px #80624F) 
+  drop-shadow(0 0 4px #80624F) 
+  drop-shadow(0 0 8px #80624F)
+  drop-shadow(0 0 12px #80624F);
+}
+
+/*設定項目符號全部縮排*/
+.info-content ul{
+  margin-left: 25px; 
+  padding-left: 0;
+}
+/*設定項目符號*/
+.ul-1{
+  list-style-type:square;
+}
+
+.ul-2{
+  text-align: left;
+  list-style-type:decimal;
+}
+.ul-3{
+  text-align: left;
+  list-style-type:circle;
+}
+
+/************* TABLE *************/
+.animal-content {
+  display: flex;/* 彈性物件 */ 
+  justify-content: center;/* 水平置中 */
+  align-items: center; /* 垂直置中 */
+  padding: 30px;
+  line-height: 30px;
+}
+.animal-content table{
+  font-size: 20px;
+  width:800;
+}
+.animal-content a{
+  display: flex;/* 彈性物件 */ 
+  justify-content: center;/* 水平置中 */
+  align-items: center; /* 垂直置中 */
+}
+
+.animal-content table,tr,td{
+  border:1px solid black; 
+  vertical-align: middle;
+  
+}
+
+.table-title{
+  height: 30px;
+}
+
+img{
+  height:300px
+}
+
+
+/************* FOOTER *************/
+footer{
+  background-color: #363945;
+  color: #ffffff;
+  height: 40px;
+  display: flex;/* 彈性物件 */ 
+  justify-content: center;/* 水平置中 */
+  align-items: center; /* 垂直置中 */ 
+}
+footer p{
+  text-align: center;
+  margin: 0;
+}
